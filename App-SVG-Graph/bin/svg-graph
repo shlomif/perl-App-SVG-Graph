@@ -1,0 +1,58 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use App::SVG::Graph;
+
+App::SVG::Graph->new({argv => [@ARGV]})->run();
+exit(0);
+
+=head1 NAME
+
+svg-graph - generate SVG graphs from TSV on the command line.
+
+=head1 SYNPOSIS
+
+gen-tab-sep-data | B<svg-graph> > output.svg
+
+=head1 DESCRIPTION
+
+This accepts tab separated values on STDIN and generates an SVG graph/chart
+on STDOUT.
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<--help> B<-h>
+
+Displays the help.
+
+=item B<--man>
+
+Displays the man page.
+
+=item B<--version>
+
+Displays the version.
+
+=item B<--output>, B<-o>
+
+Specifies an alternate output filename.
+
+=back
+
+=head1 CREDITS
+
+Written by Shlomi Fish - L<http://www.shlomifish.org/> .
+
+=head1 COPYRIGHTS & LICENSE
+
+Copyright by Shlomi Fish, 2016. All rights reserved.
+
+This file is licensed under the MIT/Expat License:
+
+L<http://www.opensource.org/licenses/mit-license.php>
+
+=cut
