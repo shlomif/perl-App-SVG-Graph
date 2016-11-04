@@ -49,7 +49,6 @@ sub _slurp_lines
 {
     my $in = shift;
 
-    local $/;
     my @ret = <$in>;
     chomp(@ret);
 
