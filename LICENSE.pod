@@ -1,0 +1,25 @@
+=encoding utf8
+
+=head1 LICENSE
+
+=head2 Text
+
+The code here is MIT/Expat Licensed.
+
+Links:
+
+=over 4
+
+=item * MIT/Expat License
+
+L<https://en.wikipedia.org/wiki/MIT_License>
+
+L<http://www.jclark.com/xml/copying.txt>
+
+=back
+
+=head1 COPYRIGHT
+
+Copyright by Shlomi Fish, 2016.
+
+=cut
