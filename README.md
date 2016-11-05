@@ -1,4 +1,6 @@
-The purpose of this Perl 5 / CPAN app is to generate SVGs containing a
+The purpose of this Perl 5 / CPAN app is to generate
+[SVGs](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) (=
+a standardised XML-based vector graphics file format) containing a
 graph/chart of numeric data from the command line. It accepts
 [TSV (tab-separated values)](https://en.wikipedia.org/wiki/Tab-separated_values)
 as input, but support for different formats may be added in the future.
@@ -7,7 +9,9 @@ as input, but support for different formats may be added in the future.
 
 ![Image](<http://www.shlomifish.org/Files/files/images/gwenview-fc-solve-svg-graph.png>)
 
-svg-graph is open source under the MIT licence.
+# Licence
+
+svg-graph is open source under the permissive MIT licence.
 
 # SEE ALSO
 
