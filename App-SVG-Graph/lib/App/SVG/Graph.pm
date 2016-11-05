@@ -155,4 +155,12 @@ Runs the application.
 
 B<For internal use.>
 
+=head1 SEE ALSO
+
+L<SVG::Graph::Kit> , L<SVG::Graph> .
+
+L<https://github.com/FormidableLabs/victory-cli> is a similar tool for
+Node.js/npm , but I had trouble installing it so I decided to create
+L<svg-graph>. It may work well enough for you, though.
+
 =cut

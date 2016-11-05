@@ -10,7 +10,7 @@ exit(0);
 
 =head1 NAME
 
-svg-graph - generate SVG graphs from TSV on the command line.
+svg-graph - generate SVG graphs from TSV (= tab-separated values) on the command line.
 
 =head1 SYNPOSIS
 
@@ -18,8 +18,20 @@ gen-tab-sep-data | B<svg-graph> > output.svg
 
 =head1 DESCRIPTION
 
-This accepts tab separated values on STDIN and generates an SVG graph/chart
-on STDOUT.
+This accepts tab separated values (TSV) on STDIN and generates an SVG
+(= Scalable Vectory Graphics) graph/chart on STDOUT. The leftmost column in
+the TSV are the X axis values and the other columns are individual
+series.
+
+For more information see:
+
+=over 4
+
+=item * L<https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>
+
+=item * L<https://en.wikipedia.org/wiki/Tab-separated_values>
+
+=back
 
 =head1 OPTIONS
 
