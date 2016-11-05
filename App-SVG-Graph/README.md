@@ -1,0 +1,29 @@
+The purpose of this Perl 5 / CPAN app is to generate SVGs containing a
+graph/chart of numeric data from the command line. It accepts
+[TSV (tab-separated values)](https://en.wikipedia.org/wiki/Tab-separated_values)
+as input, but support for different formats may be added in the future.
+
+Here is a screenshot of it in action along with a sample command line
+invocation:
+
+- http://www.shlomifish.org/Files/files/images/gwenview-fc-solve-svg-graph.png
+
+svg-graph is open source under the MIT licence.
+
+# SEE ALSO
+
+- [MetaCPAN Page](https://metacpan.org/release/App-SVG-Graph)
+- [victory-cli](https://github.com/FormidableLabs/victory-cli) - a similar tool
+written in Node.js/npm.
+- [“Directory of Numerical Software”](http://www.shlomifish.org/open-source/resources/numerical-software/) - on Shlomi Fish’s web site and under CC-by.
+
+# THANKS
+
+- Thanks to [Sawyer X](http://blogs.perl.org/users/sawyer_x/) for telling me
+why CPAN authors should write more command line applications.
+- Thanks to the authors of [SVG::Graph](https://metacpan.org/release/SVG-Graph)
+and [SVG::Graph::Kit](https://metacpan.org/release/SVG-Graph-Kit) which this
+code makes use of.
+- Thanks to Nadim, Nadav, Amadiro, jasondockers and Dark_Fox for some
+commentary on early versions of this tool.
+
