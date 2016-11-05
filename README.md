@@ -3,10 +3,9 @@ graph/chart of numeric data from the command line. It accepts
 [TSV (tab-separated values)](https://en.wikipedia.org/wiki/Tab-separated_values)
 as input, but support for different formats may be added in the future.
 
-Here is a screenshot of it in action along with a sample command line
-invocation:
+# Screenshots
 
-- http://www.shlomifish.org/Files/files/images/gwenview-fc-solve-svg-graph.png
+![Image](<http://www.shlomifish.org/Files/files/images/gwenview-fc-solve-svg-graph.png>)
 
 svg-graph is open source under the MIT licence.
 
