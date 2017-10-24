@@ -55,6 +55,16 @@ sub _slurp_lines
     return \@ret;
 }
 
+sub _render_as_svg
+{
+    my ($self, $args) = @_;
+
+    my $g = SVG::Graph::Kit->new(data => $args->{data});
+    print {$args->{out_fh}} $g->draw;
+
+    return;
+}
+
 sub run
 {
     my ($self) = @_;
@@ -114,9 +124,8 @@ sub run
     }
 
     my $data = [map { [split/\t/, $_] } @{_slurp_lines($in_fh)}];
+    $self->_render_as_svg({data => $data, out_fh => $out_fh});
 
-    my $g = SVG::Graph::Kit->new(data => $data);
-    print {$out_fh} $g->draw;
     close ($out_fh);
 
     if (defined($filename))
