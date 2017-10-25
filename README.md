@@ -9,6 +9,10 @@ as input, but support for different formats may be added in the future.
 
 ![Image](<http://www.shlomifish.org/Files/files/images/gwenview-fc-solve-svg-graph.png>)
 
+# Badges
+
+[![Build Status](https://travis-ci.org/shlomif/perl-App-SVG-Graph.svg?branch=master)](https://travis-ci.org/shlomif/perl-App-SVG-Graph)
+
 # Licence
 
 svg-graph is open source under the permissive MIT licence.
