@@ -15,7 +15,7 @@ as input, but support for different formats may be added in the future.
 
 # Licence
 
-svg-graph is open source under the permissive MIT licence.
+svg-graph is open source under the permissive MIT/Expat licence.
 
 # SEE ALSO
 
