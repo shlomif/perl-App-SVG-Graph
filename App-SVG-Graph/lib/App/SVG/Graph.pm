@@ -38,9 +38,9 @@ sub new
 
 sub _init
 {
-    my ($self, $args) = @_;
+    my ( $self, $args ) = @_;
 
-    $self->argv($args->{argv});
+    $self->argv( $args->{argv} );
 
     return;
 }
@@ -57,10 +57,10 @@ sub _slurp_lines
 
 sub _render_as_svg
 {
-    my ($self, $args) = @_;
+    my ( $self, $args ) = @_;
 
-    my $g = SVG::Graph::Kit->new(data => $args->{data});
-    print {$args->{out_fh}} $g->draw;
+    my $g = SVG::Graph::Kit->new( data => $args->{data} );
+    print { $args->{out_fh} } $g->draw;
 
     return;
 }
@@ -70,28 +70,28 @@ sub run
     my ($self) = @_;
 
     my $output_fn;
-    my $man = 0;
-    my $help = 0;
+    my $man     = 0;
+    my $help    = 0;
     my $version = 0;
 
-    my @argv = @{$self->argv};
+    my @argv = @{ $self->argv };
 
     GetOptionsFromArray(
         \@argv,
         "output|o" => \$output_fn,
-        "help|h" => \$help,
-        "man" => \$man,
-        "version" => \$version,
+        "help|h"   => \$help,
+        "man"      => \$man,
+        "version"  => \$version,
     ) or pod2usage(2);
 
     if ($help)
     {
-        pod2usage(1)
+        pod2usage(1);
     }
 
     if ($man)
     {
-        pod2usage(-verbose => 2);
+        pod2usage( -verbose => 2 );
     }
 
     if ($version)
@@ -103,7 +103,7 @@ sub run
     my $in_fh;
 
     my $filename = shift(@argv);
-    if (!defined($filename))
+    if ( !defined($filename) )
     {
         $in_fh = \*STDIN;
     }
@@ -114,7 +114,7 @@ sub run
 
     my $out_fh;
 
-    if (!defined($output_fn))
+    if ( !defined($output_fn) )
     {
         $out_fh = \*STDOUT;
     }
@@ -123,12 +123,12 @@ sub run
         open $out_fh, '>', $output_fn;
     }
 
-    my $data = [map { [split/\t/, $_] } @{_slurp_lines($in_fh)}];
-    $self->_render_as_svg({data => $data, out_fh => $out_fh});
+    my $data = [ map { [ split /\t/, $_ ] } @{ _slurp_lines($in_fh) } ];
+    $self->_render_as_svg( { data => $data, out_fh => $out_fh } );
 
-    close ($out_fh);
+    close($out_fh);
 
-    if (defined($filename))
+    if ( defined($filename) )
     {
         close($in_fh);
     }
